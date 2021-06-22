@@ -1,21 +1,27 @@
 <template>
   <div id="app">
-    <Header :navLinks="headerLinks" />
+    <Header :info="contactInfo" :navLinks="headerLinks" />
     <Main />
-    <Footer />
+    <Footer :info="contactInfo" :footerLinks="footerLinks" />
   </div>
 </template>
 
 <script>
 import '@fortawesome/fontawesome-free/css/all.css'
-import Main from './components/Main.vue'
 import Header from './components/Header.vue'
+import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   data() {
     return {
+      contactInfo: {
+        openingTime: "Open Hours: Mon - Sat - 9:00 - 18:00",
+        phone: "+1 (305) 1234-5678",
+        mail: "hello@example.com",
+        location: "Main Avenue, 987"
+      },
       headerLinks: [
         {
           name: "Home",
@@ -37,6 +43,95 @@ export default {
           name: "Testimonials",
           url: "#"
         },
+      ],
+      footerLinks: [
+        {
+          section: "About",
+          links: [
+            {
+              text: "The Company",
+              url: "#"
+            },
+            {
+              text: "Institutional",
+              url: "#"
+            },
+            {
+              text: "Social & Events",
+              url: "#"
+            },
+            {
+              text: "Innovation",
+              url: "#"
+            },
+            {
+              text: "Envoironment",
+              url: "#"
+            },
+            {
+              text: "Technology",
+              url: "#"
+            }
+          ],
+        },
+        {
+          section: "Transport",
+          links: [
+            {
+              text: "Industrialized",
+              url: "#"
+            },
+            {
+              text: "Chemicals",
+              url: "#"
+            },
+            {
+              text: "Packaged Liquids",
+              url: "#"
+            },
+            {
+              text: "Construction",
+              url: "#"
+            },
+            {
+              text: "Laminated Wood",
+              url: "#"
+            },
+            {
+              text: "And others",
+              url: "#"
+            }
+          ],
+        },
+        {
+          section: "Support",
+          links: [
+            {
+              text: "Responsibility",
+              url: "#"
+            },
+            {
+              text: "Terms of Use",
+              url: "#"
+            },
+            {
+              text: "About Cookies",
+              url: "#"
+            },
+            {
+              text: "Privacy Policy",
+              url: "#"
+            },
+            {
+              text: "Accessibility",
+              url: "#"
+            },
+            {
+              text: "Information",
+              url: "#"
+            }
+          ],
+        }
       ]
     }
   },
@@ -54,6 +149,7 @@ export default {
   .list_none {
     list-style: none;
     margin: 0;
+    padding: 0;
   }
 
   .full_btn {
@@ -84,4 +180,15 @@ export default {
     }
   }
 
+.logo {
+  font-weight: bold;
+
+  span {
+    color: #00a6a6;
+    background-color: rgba($color: #00a6a6, $alpha: 0.2);
+    padding: 10px 5px 10px 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
 </style>

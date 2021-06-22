@@ -3,12 +3,12 @@
         <div class="container-fluid info_container">
             <div class="container d-flex justify-content-between align-items-center info">
                 <div>
-                    <i class="fas fa-clock"></i> <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                    <i class="fas fa-clock"></i>{{info.openingTime}}
                 </div>
                 <div>
                     <ul class="d-flex list_none">
-                        <li><i class="fas fa-phone-alt"></i> <span>+1 (305) 1234-5678</span></li>
-                        <li><i class="fas fa-envelope"></i> <span>hello@example.com</span></li>
+                        <li><i class="fas fa-phone-alt"></i>{{info.phone}}</li>
+                        <li><i class="fas fa-envelope"></i>{{info.mail}}</li>
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -20,7 +20,7 @@
             <div class="back_jumbo container-fluid">
                 <div class="container">
                     <nav class="d-flex justify-content-between align-items-center">
-                        <div class="nav_left"><span>N E X</span> G E N</div>
+                        <div class="nav_left logo"><span>N E X</span> G E N</div>
                         <div class="nav_right">
                             <ul class="d-flex list_none">
                                 <li v-for="(link, index) in navLinks" :key="index">
@@ -51,6 +51,7 @@ export default {
     name: "Header",
     props: {
         navLinks: Array,
+        info: Object
     }
 }
 </script>
@@ -64,6 +65,10 @@ export default {
 
             .info {
                 height: 50px;
+
+                i {
+                    margin-right: 10px;
+                }
 
                 ul {
                     
@@ -90,17 +95,6 @@ export default {
                 nav {
                     height: 80px;
                 
-                    .nav_left {
-                        color: white;
-                        font-weight: bold;
-                        span {
-                            color: #00a6a6;
-                            background-color: rgba($color: #00a6a6, $alpha: 0.2);
-                            padding: 10px 5px 10px 25px;
-                            border-top-left-radius: 20px;
-                            border-bottom-left-radius: 20px;
-                        }
-                    }
                     .nav_right {
                         ul {
                             li {
