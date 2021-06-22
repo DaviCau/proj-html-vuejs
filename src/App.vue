@@ -69,5 +69,19 @@ export default {
       color: white;
     }
   }
+  .empty_btn {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 1px #058283;
+
+    &:hover {
+      color: white;
+    }
+  }
 
 </style>

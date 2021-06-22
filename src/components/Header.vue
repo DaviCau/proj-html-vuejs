@@ -31,6 +31,15 @@
                             </ul>
                         </div>
                     </nav>
+                    <div class="jumbotron_content">
+                        <h4>logistics services</h4>
+                        <h1>Cargo transport</h1>
+                        <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles</p>
+                        <div class="jumbotron_buttons">
+                            <a class="full_btn" href="#">Get in Touch</a>
+                            <a class="empty_btn" href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,60 +56,95 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .info_container {
-        background-color: #21333e;
+    header {
         color: white;
 
-        .info {
-            height: 50px;
+        .info_container {
+            background-color: #21333e;
 
-            ul {
-                
-                li {
-                    margin-left: 20px;
+            .info {
+                height: 50px;
 
-                    a {
-                        color: white;
+                ul {
+                    
+                    li {
+                        margin-left: 20px;
+
+                        a {
+                            color: white;
+                        }
                     }
                 }
             }
         }
-    }
 
-    .jumbotron {
-        background-image: url(../assets/img/bg-9.jpg);
-        background-position-x: center;
+        .jumbotron {
+            background-image: url(../assets/img/bg-9.jpg);
+            background-position-x: center;
 
-        .back_jumbo {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 870px;
+            .back_jumbo {
+                background-color: rgba(0, 0, 0, 0.5);
+                height: 860px;
+                position: relative;
 
-            nav {
-                height: 80px;
-            
-                .nav_left {
-                    color: white;
-                    font-weight: bold;
-                    span {
-                        color: #00a6a6;
-                        background-color: rgba($color: #00a6a6, $alpha: 0.2);
-                        padding: 10px 5px 10px 25px;
-                        border-top-left-radius: 20px;
-                        border-bottom-left-radius: 20px;
+                nav {
+                    height: 80px;
+                
+                    .nav_left {
+                        color: white;
+                        font-weight: bold;
+                        span {
+                            color: #00a6a6;
+                            background-color: rgba($color: #00a6a6, $alpha: 0.2);
+                            padding: 10px 5px 10px 25px;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                        }
+                    }
+                    .nav_right {
+                        ul {
+                            li {
+                                margin-left: 30px;
+                                color: white;
+                            }
+
+                            .nav_link {
+                                text-decoration: none;
+                                color: white;
+                                font-weight: bold;
+                                text-transform: uppercase;
+                            }
+                        }
                     }
                 }
-                .nav_right {
-                    ul {
-                        li {
-                            margin-left: 30px;
-                            color: white;
-                        }
 
-                        .nav_link {
-                            text-decoration: none;
-                            color: white;
-                            font-weight: bold;
-                            text-transform: uppercase;
+                .jumbotron_content {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 30%;
+
+                    h4 {
+                        color: #058283;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    h1 {
+                        font-size: 80px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 22px;
+                        margin: 40px 0;
+                    }
+                    .jumbotron_buttons {
+                        margin: 20px 0 0;
+                        
+                        a {
+                            margin-right: 20px;
                         }
                     }
                 }
