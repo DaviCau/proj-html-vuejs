@@ -6,24 +6,25 @@
         <section class="dark_back">
             <Services :services="services" />
         </section>
-        <section>
+        <!-- <section>
 
-        </section>
+        </section> -->
         <section class="img_back">
-
+            <Stats :stats="stats" />
         </section>
-        <section class="dark_back">
+        <!-- <section class="dark_back">
             
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
 
-        </section>
+        </section> -->
     </main>
 </template>
 
 <script>
 import TransportSection from './TransportSection.vue'
 import Services from './Services.vue'
+import Stats from './Stats.vue'
 
 export default {
     name: "Main",
@@ -111,32 +112,33 @@ export default {
             feedbacks: [
                 {
                     logoUrl: "../assets/img/logo-1.png",
-                    text: `Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+                    text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
+                    text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 },
                 {
                     logoUrl: "../assets/img/logo-2.png",
-                    text: `Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.`                    
+                    text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
+                    text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."                    
                 },
                 {
                     logoUrl: "../assets/img/logo-3.png",
-                    text: `Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.`                    
+                    text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
+                    text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."                    
                 }
             ]
         }
     },
     components: {
         TransportSection,
-        Services
+        Services,
+        Stats
     }
 }
 </script>
 
 <style lang="scss" scoped>
     section {
-        padding: 110px 0;
+        padding: 140px 0;
 
         &.dark_back {
             background-color: #111117;

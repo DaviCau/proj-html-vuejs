@@ -31,6 +31,7 @@ export default {
 
         h3 {
             padding: 20px 0;
+            font-weight: bold;
         }
         p {
             opacity: .5;
