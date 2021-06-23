@@ -186,6 +186,11 @@ export default {
     font-size: 16px;
     font-weight: bold;
   }
+  .title {
+    margin: 25px 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
 
   .logo {
     font-weight: bold;

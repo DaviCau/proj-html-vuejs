@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-8 left_side">
                 <h4 class="pre_title">Who we are</h4>
-                <h2><span><i class="far fa-gem"></i> Excellence</span> in Transport</h2>
+                <h2 class="title"><span><i class="far fa-gem"></i> Excellence</span> in Transport</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a sequi dignissimos fuga veniam perspiciatis optio nisi neque obcaecati natus aperiam consequuntur nihil odit quia delectus quae dolore magnam.
                 </p>
@@ -62,10 +62,8 @@ export default {
 
     .left_side {
 
-        h2 {
-            margin: 25px 0;
-            font-size: 40px;
-            font-weight: bold;
+        .title {
+            
             span {
                 padding: 5px 15px;
                 background-color: #daeced;

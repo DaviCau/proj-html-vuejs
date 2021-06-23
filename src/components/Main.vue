@@ -4,7 +4,7 @@
             <TransportSection :vehicles="vehicleTypes" />
         </section>
         <section class="dark_back">
-
+            <Services :services="services" />
         </section>
         <section>
 
@@ -23,6 +23,7 @@
 
 <script>
 import TransportSection from './TransportSection.vue'
+import Services from './Services.vue'
 
 export default {
     name: "Main",
@@ -45,7 +46,7 @@ export default {
                     maxWeight: "24000"
                 }
             ],
-            sevices: [
+            services: [
                 {
                     icon: "fas fa-truck-loading",
                     title: "Techology",
@@ -127,7 +128,8 @@ export default {
         }
     },
     components: {
-        TransportSection
+        TransportSection,
+        Services
     }
 }
 </script>
