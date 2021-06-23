@@ -180,15 +180,22 @@ export default {
     }
   }
 
-.logo {
-  font-weight: bold;
-
-  span {
-    color: #00a6a6;
-    background-color: rgba($color: #00a6a6, $alpha: 0.2);
-    padding: 10px 5px 10px 25px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  .pre_title {
+    color: #018385;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
   }
-}
+
+  .logo {
+    font-weight: bold;
+
+    span {
+      color: #00a6a6;
+      background-color: rgba($color: #00a6a6, $alpha: 0.2);
+      padding: 10px 5px 10px 25px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
 </style>

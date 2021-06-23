@@ -1,44 +1,46 @@
 <template>
     <main>
-        <section class="transport">
+        <section>
+            <TransportSection :vehicles="vehicleTypes" />
+        </section>
+        <section class="dark_back">
+
+        </section>
+        <section>
+
+        </section>
+        <section class="img_back">
+
+        </section>
+        <section class="dark_back">
             
         </section>
-        <section class="dark_back services">
-
-        </section>
-        <section class="procedure">
-
-        </section>
-        <section class="img_back stats">
-
-        </section>
-        <section class="dark_back feedbacks">
-            
-        </section>
-        <section class="contact">
+        <section>
 
         </section>
     </main>
 </template>
 
 <script>
+import TransportSection from './TransportSection.vue'
+
 export default {
     name: "Main",
     data() {
         return {
             vehicleTypes: [
                 {
-                    imgUrl: "../assets/img/truck-1.png",
+                    imgUrl: "truck-1",
                     type: "Light",
                     maxWeight: "1200"
                 },
                 {
-                    imgUrl: "../assets/img/truck-1.png",
+                    imgUrl: "truck-1",
                     type: "Medium",
                     maxWeight: "6000"
                 },
                 {
-                    imgUrl: "../assets/img/truck-1.png",
+                    imgUrl: "truck-1",
                     type: "Heavy",
                     maxWeight: "24000"
                 }
@@ -123,6 +125,9 @@ export default {
                 }
             ]
         }
+    },
+    components: {
+        TransportSection
     }
 }
 </script>
@@ -139,6 +144,7 @@ export default {
             background-image: url("../assets/img/bg-10.jpg");
             background-position: center;
             background-size: cover;
+            color: white;
         }
     }
 </style>

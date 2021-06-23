@@ -32,7 +32,7 @@
                         </div>
                     </nav>
                     <div class="jumbotron_content">
-                        <h4>logistics services</h4>
+                        <h4 class="pre_title">logistics services</h4>
                         <h1>Cargo transport</h1>
                         <p>Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles</p>
                         <div class="jumbotron_buttons">
@@ -117,13 +117,7 @@ export default {
                     top: 50%;
                     transform: translateY(-50%);
                     width: 30%;
-
-                    h4 {
-                        color: #058283;
-                        text-transform: uppercase;
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
+                    
                     h1 {
                         font-size: 80px;
                         text-transform: uppercase;
