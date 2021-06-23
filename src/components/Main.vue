@@ -15,9 +15,9 @@
         <section class="dark_back">
             <Feedbacks :feedbacks="feedbacks" />
         </section>
-        <!-- <section>
-
-        </section> -->
+        <section>
+            <Contact :info="info" />
+        </section>
     </main>
 </template>
 
@@ -26,9 +26,13 @@ import TransportSection from './TransportSection.vue'
 import Services from './Services.vue'
 import Stats from './Stats.vue'
 import Feedbacks from './Feedbacks.vue'
+import Contact from './Contact.vue'
 
 export default {
     name: "Main",
+    props: {
+        info: Object
+    },
     data() {
         return {
             vehicleTypes: [
@@ -133,7 +137,8 @@ export default {
         TransportSection,
         Services,
         Stats,
-        Feedbacks
+        Feedbacks,
+        Contact
     }
 }
 </script>

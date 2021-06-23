@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header :info="contactInfo" :navLinks="headerLinks" />
-    <Main />
+    <Main :info="contactInfo" />
     <Footer :info="contactInfo" :footerLinks="footerLinks" />
   </div>
 </template>
