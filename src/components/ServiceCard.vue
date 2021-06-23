@@ -1,8 +1,9 @@
 <template>
     <div class="d-flex flex-column align-items-start">
-        <i :class="item.icon"></i>
+        <i class="main_icon" :class="item.icon"></i>
         <h3>{{item.title}}</h3>
         <p>{{item.text}}</p>
+        <i class="arrow fas fa-arrow-right"></i>
     </div>
 </template>
 
@@ -20,8 +21,17 @@ export default {
         padding: 40px;
         background-color: #19191f;
         border-radius: 10px;
+        position: relative;
 
-        i {
+        .arrow {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 25px;
+            color: #0f4e51;
+        }
+
+        .main_icon {
             padding: 20px;
             font-size: 25px;
             color: #058283;

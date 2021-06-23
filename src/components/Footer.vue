@@ -53,7 +53,7 @@ export default {
             background-color: #111117;
 
             .box_container {
-                padding: 110px 0;
+                padding: 140px 0;
 
                 .box_footer {
                     height: 335px;

@@ -12,9 +12,9 @@
         <section class="img_back">
             <Stats :stats="stats" />
         </section>
-        <!-- <section class="dark_back">
-            
-        </section> -->
+        <section class="dark_back">
+            <Feedbacks :feedbacks="feedbacks" />
+        </section>
         <!-- <section>
 
         </section> -->
@@ -25,6 +25,7 @@
 import TransportSection from './TransportSection.vue'
 import Services from './Services.vue'
 import Stats from './Stats.vue'
+import Feedbacks from './Feedbacks.vue'
 
 export default {
     name: "Main",
@@ -111,17 +112,17 @@ export default {
             ],
             feedbacks: [
                 {
-                    logoUrl: "../assets/img/logo-1.png",
+                    logoUrl: "logo-1",
                     text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
                     text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 },
                 {
-                    logoUrl: "../assets/img/logo-2.png",
+                    logoUrl: "logo-2",
                     text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
                     text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."                    
                 },
                 {
-                    logoUrl: "../assets/img/logo-3.png",
+                    logoUrl: "logo-3",
                     text1: "Praesent volutpat justo sit amet elementum malesuada. Praesent sagittis augue justo, in accumsan orci rhoncus at pellentesque.",
                     text2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."                    
                 }
@@ -131,7 +132,8 @@ export default {
     components: {
         TransportSection,
         Services,
-        Stats
+        Stats,
+        Feedbacks
     }
 }
 </script>
