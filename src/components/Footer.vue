@@ -1,8 +1,8 @@
 <template>
     <footer>
-        <div class="footer_top container-fluid">
+        <div class="footer_top">
             <div class="container">
-                <div class="row d-flex align-items-center box_container">
+                <div class="row box_container">
                     <div class="col-3 d-flex flex-column justify-content-between align-items-start box_footer">
                         <div class="logo"><span class="logo_text">N E X</span> G E N</div>
                         <div class="info_footer">
@@ -21,8 +21,8 @@
                 </div>
             </div>
         </div>
-        <div class="footer_bottom container-fluid">
-            <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer_bottom py-4">
+            <div class="container d-flex justify-content-between">
                 <p>Enjoy the low price. We are tracking any intention of piracy</p>
                 <p>&copy; 2020 NEXGEN is Proudly Powered by <a href="#">Codings</a>.</p>
             </div>
@@ -53,7 +53,7 @@ export default {
             background-color: #111117;
 
             .box_container {
-                height: 600px;
+                padding: 110px 0;
 
                 .box_footer {
                     height: 335px;
@@ -77,10 +77,13 @@ export default {
         .footer_bottom {
             background-color: #0d0d11;
 
-            div {
-                height: 80px;
-                p {
-                    margin: 0;
+            p {
+                margin: 0;
+                opacity: 0.5;
+
+                a {
+                    color: #00a6a6;
+                    text-decoration: none;
                 }
             }
         }

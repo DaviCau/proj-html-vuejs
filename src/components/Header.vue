@@ -1,7 +1,7 @@
 <template>
     <header>
-        <div class="container-fluid info_container">
-            <div class="container d-flex justify-content-between align-items-center info">
+        <div class="info_container">
+            <div class="container d-flex justify-content-between align-items-center py-3">
                 <div>
                     <i class="fas fa-clock"></i>{{info.openingTime}}
                 </div>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="jumbotron">
-            <div class="back_jumbo container-fluid">
+            <div class="back_jumbo">
                 <div class="container">
                     <nav class="d-flex justify-content-between align-items-center">
                         <div class="nav_left logo"><span>N E X</span> G E N</div>
@@ -62,30 +62,30 @@ export default {
 
         .info_container {
             background-color: #21333e;
+            font-size: 14px;
+            color: rgba($color: #ffffff, $alpha: 0.5);
 
-            .info {
-                height: 50px;
+            i {
+                margin-right: 10px;
+            }
 
-                i {
-                    margin-right: 10px;
-                }
+            ul {
+                
+                li {
+                    margin-left: 20px;
 
-                ul {
-                    
-                    li {
-                        margin-left: 20px;
-
-                        a {
-                            color: white;
-                        }
+                    a {
+                        color: rgba($color: #ffffff, $alpha: 0.5);
                     }
                 }
             }
         }
 
         .jumbotron {
-            background-image: url(../assets/img/bg-9.jpg);
+            background-image: url("../assets/img/bg-9.jpg");
             background-position-x: center;
+            background-size: cover;
+
 
             .back_jumbo {
                 background-color: rgba(0, 0, 0, 0.5);
